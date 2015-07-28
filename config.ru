@@ -7,4 +7,5 @@ Dir.glob('./{controllers,models}/*.rb').each {
 }
 
 #localhost:9292/students/
+map('/') {run HomeController}
 map('/students') {run StudentsController}
